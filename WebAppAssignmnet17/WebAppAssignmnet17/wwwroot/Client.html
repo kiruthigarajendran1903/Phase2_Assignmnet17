@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <title>HTML Client</title>
+</head>
+<body>
+    <h1 class="text-center bg-dark text-white m-2">Here We are going to show WebApi Data</h1>
+    <h2>Movies List</h2>
+    <ul id="taskList" class="bg-primary text-white"></ul>
+    <hr />
+    <form id="createMovieForm" class="m-2">
+        <label for="title" class="form-label">Title:</label>
+        <input type="text" class="form-control" id="title" name="title" required />
+        <label for="releaseDate" class="form-label">releaseDate</label>
+        <input type="date" class="form-control" id="releaseDate" name="releaseDate" />
+        <label for="rating" class="form-label">Rating :</label>
+        <input type="number" class="form-control" id="rating" name="rating" required />
+        <button type="submit" class="btn btn-primary text-white mt-2">Create Movie List</button>
+    </form>
+
+    <h2>Update Task</h2>
+    <form id="updateMovieForm" class="m-2">
+        <label for="movieId" class="form-label">Movie ID :</label>
+        <input type="number" class="form-control" id="movieId" />
+        <label for="newTitle" class="form-label">New Movie Title :</label>
+        <input type="text" class="form-control" id="newTitle" />
+        <label for="newreleaseDate" class="form-label">New releaseDate : </label>
+        <input type="date" class="form-control" id="newreleaseDate" />
+        <label for="newRating" class="form-label">New Rating : </label>
+        <input type="number" class="form-control" id="newRating" />
+        <button type="submit" class="btn btn-primary text-white mt-2">Update Movie List</button>
+    </form>
+    <h2>Delete Movie</h2>
+    <form id="deleteMovieForm" class="m-2">
+        <label for="deletemovieId" class="form-label">Movie ID :</label>
+        <input type="number" class="form-control" id="deletemovieId" />
+        <button type="submit" class="btn btn-primary text-white mt-2">Delete movie</button>
+    </form>
+   
+    <script src="js/JavaScript.js"></script>
+</body>
+</html>
